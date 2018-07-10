@@ -1,0 +1,4 @@
+inicio2
+otro inicio2
+fin2
+nuevo fin2

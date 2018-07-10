@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+            <title>Document</title>
+</head>
+<body>
+        <canvas id="myChart"></canvas>
+       <script>
+           let ctx = document.getElementById("myChart")
+      
+           var marksData = {
+               labels: ["Inglés", "Matemáticas", "Física", "Química", "Biología", "Historia"],
+               datasets:
+               [{
+                   label: "Estudiante A",
+                   backgroundColor: "rgba(200,0,0,0.2)",
+                   data: [65, 75, 70, 80, 60, 80]
+                }, 
+                {
+                    label: "Estudiante B",
+                    backgroundColor: "rgba(0,0,200,0.2)",
+                    data: [54, 65, 60, 70, 70, 75]
+                },
+                {
+                    label: "Estudiante C",
+                    backgroundColor: "rgba(191,255,0,0.2)",
+                    data: [70,70, 65, 75, 65, 70]
+                }]
+            };
+ 
+            var radarChart = new Chart(ctx, {
+            type: 'radar',
+            data: marksData
+            });
+        </script>
+        
+</body>
+</html>
