@@ -1,0 +1,27 @@
+body  {
+    color: red;
+
+    ul {
+        display: grid;
+        grid-template-columns: 1fr, 1fr, 1fr;
+        grid-gap: 5px;
+    }
+
+    ul li {
+        list-style-type: none
+        position: relative;
+    }
+
+    ul li span {
+        position: absolute;
+        color: white;
+        bottom: 0;
+        z-index: 1000;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5)
+    }
+    
+    ul li a image {
+
+    }
+}
